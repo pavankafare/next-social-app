@@ -2,12 +2,13 @@
 import Link from 'next/link';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HiHome } from 'react-icons/hi';
-// import {
-//     SignedIn,
-//     SignedOut,
-//     SignInButton,
-//     SignOutButton,
-// } from '@clerk/nextjs';
+import {
+    SignedIn,
+    SignedOut,
+    SignInButton,
+    SignOutButton,
+} from '@clerk/nextjs';
+import MiniProfile from './MiniProfile';
 // import MiniProfile from './MiniProfile';
 export default function Sidebar() {
     return (
@@ -25,19 +26,18 @@ export default function Sidebar() {
                     <span className='font-bold '>Home</span>
                 </Link>
                 <button className='bg-blue-400 text-white rounded-full  hover:brightness-95 transition-all duration-200 w-48 h-9 shadow-md hidden xl:inline font-semibold'>
-                    {/* <SignedIn>signup
+                    <SignedIn>
                         <SignOutButton />
                     </SignedIn>
                     <SignedOut>
                         <SignInButton />
-                    </SignedOut> */}
-                    {/* signup */}Signup
+                    </SignedOut>
+
                 </button>/
-                {/* <Button>signup</Button> */}
             </div>
-            {/* <SignedIn>
+            <SignedIn>
                 <MiniProfile />
-            </SignedIn> */}
+            </SignedIn>
         </div>
     );
 }

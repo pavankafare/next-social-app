@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import News from './News';
-// import News from './News';
 
 export default function RightSidebar() {
     const [input, setInput] = useState('');
